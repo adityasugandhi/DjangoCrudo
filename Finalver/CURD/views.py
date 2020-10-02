@@ -54,6 +54,6 @@ def CustomerDelete(request, pk):
     customer = Curd.objects.get(id=pk)
     customer.delete()
 
-    return Response(serializer.data)
+    return Response('Deleted Succesfully')
 
     
