@@ -11,7 +11,7 @@ class Curd(models.Model):
     classification_l1 = models.CharField(max_length=20)
     classification_l2 = models.CharField(max_length=20)
     classification_l3 = models.CharField(max_length=20)
-    image_url = models,URLField(default=None)
+    image_url = models.URLField(default=None)
 
     def __str__(self):
         return self.name
